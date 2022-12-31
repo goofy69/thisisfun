@@ -6,9 +6,13 @@ body {
   height: 100vh;
 }
 
+a {
+  color: #ffc0cb;
+}
+
 #fancy-text {
   font-family: 'Roboto', sans-serif;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 600;
   text-align: center;
   line-height: 1.5;
