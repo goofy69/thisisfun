@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title><3</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<script>
+    var elem = document.documentElement;
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+      }
+    }
+    
+    function closeFullscreen() {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) { /* Safari */
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) { /* IE11 */
+        document.msExitFullscreen();
+      }
+    }
+    </script>
+    
+
+<body id="top">
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+            
+                </ul>
+                <p></p>
+            </div>
+        </nav>
+    </header>
+
+    <embed name="GoodEnough" src="mystical.mp3" loop="false" hidden="true" autostart="true">
+
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="121188.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+        <div class="home-content">
+            <div class="row home-content__main">
+                <h3>Welcome!</h3>
+                <h1>
+                    Happy birthday my love :)<br>
+                    You're perfect.
+                </h1>
+                <div class="home-content__buttons" hidden="hidden">
+                    <a href="#contact" class="smoothscroll btn btn--stroke">
+                        Wanna Collab?
+                    </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        More About App
+                    </a>
+                </div>
+            </div>
+            <div class="home-content__scroll">
+                <a href="#bdayvideo" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+            <div class="home-content__line"></div>
+        </div>
+    </section>
+    
+    <script>
+        function videoEnded() {
+            location.href="#images";
+         }
+      </script>
+
+    <div class="goofyimage">
+    <section id="video" class="s-home target-section" data-parallax="scroll" data-image-src="hero-bg1.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+        <div id="bdayvideo" class="bdayvideo">
+                <video id="myVideo" preload="auto" controls onended="videoEnded()">
+                    <source src="https://files.catbox.moe/3fa9tt.mp4" type="video/mp4">
+                    </video>
+    </section>
+</div>
+   <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div id="images">
+    <section class="s-home target-section" data-parallax="scroll" data-image-src="https://www.solidbackgrounds.com/images/3840x2160/3840x2160-black-solid-color-background.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+        <iframe id="embed" src="image/index.html"></iframe>
+    </section>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+<!--Started at 7pm, now we're here :)-->
+
+</html>
