@@ -13,7 +13,8 @@
     <meta name="author" content="rex">
     <script>
         function videoEnded() {
-            location.href="#images";
+        location.href = "#images";
+        history.pushState("", document.title, window.location.pathname);
         }
 
         let options = {
@@ -57,11 +58,6 @@
                     You're perfect.
                 </h1>
     </section>    
-    <script>
-        function videoEnded() {
-            location.href="#images";
-         }
-      </script>
     <div class="bdayvideo">
     <section id="video" class="s-home target-section" data-parallax="scroll" data-image-src="assets/bg1.jpg">
         <div id="bdayvideo" class="bdayvideo">
