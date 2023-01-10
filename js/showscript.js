@@ -1,12 +1,9 @@
 const track = document.getElementById("image-track");
-
 const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
-
 const handleOnUp = () => {
   track.dataset.mouseDownAt = "0";  
   track.dataset.prevPercentage = track.dataset.percentage;
 }
-
 const handleOnMove = e => {
   if(track.dataset.mouseDownAt === "0") return;
   
@@ -29,8 +26,6 @@ const handleOnMove = e => {
     }, { duration: 1200, fill: "forwards" });
   }
 }
-
-/* -- Had to add extra lines for touch events -- */
 
 window.onmousedown = e => handleOnDown(e);
 window.ontouchstart = e => handleOnDown(e.touches[0]);

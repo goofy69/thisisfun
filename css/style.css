@@ -48,9 +48,6 @@ body{
     -moz-osx-font-smoothing:grayscale;
     -webkit-font-smoothing:antialiased
 }
-video{
-    max-width:100%
-}
 div,h1,h3,p{
     margin:0;
     padding:0
@@ -177,9 +174,9 @@ p{
     margin: 0 auto; /* centers the video horizontally */
     max-width: 90%; /* limit the maximum width of the video */
     height: auto; /* Keep the aspect ratio of the video */
-    padding: 5%; /* Add some padding around the video */
+    padding: 1%; /* Add some padding around the video */
     background-color: transparent;
-    object-fit: cover;
+    object-fit: contain;
     height: 100vh;
     width: 100vw;
 }

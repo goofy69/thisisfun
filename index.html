@@ -4,14 +4,42 @@
     <meta charset="utf-8">
     <title><3</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <link rel="icon" href="assets/favicon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="rex">
+    <script>
+        function videoEnded() {
+            location.href="#images";
+        }
+
+        let options = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.7
+        };
+
+        let observer = new IntersectionObserver(handleIntersection, options);
+
+        function handleIntersection(entries) {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting && entry.intersectionRatio >= 0.7) {
+                    document.getElementById("myVideo").play();
+                } else {
+                    document.getElementById("myVideo").pause();
+                }
+            });
+        }
+
+        window.onload = function(){
+            let videoElement = document.getElementById("myVideo");
+            observer.observe(videoElement);
+        }
+
+    </script>
 </head>
 
 <body id="top">
@@ -34,11 +62,11 @@
             location.href="#images";
          }
       </script>
-    <div class="goofyvideo">
+    <div class="bdayvideo">
     <section id="video" class="s-home target-section" data-parallax="scroll" data-image-src="assets/bg1.jpg">
         <div id="bdayvideo" class="bdayvideo">
-                <video id="myVideo" preload="auto" controls onended="videoEnded()">
-                    <source src="https://files.catbox.moe/3fa9tt.mp4" type="video/mp4">
+                <video id="myVideo" preload="auto" autoplay muted onended="videoEnded()">
+                    <source src="https://cdn.discordapp.com/attachments/1041814008338075699/1062359027549483030/zi6esd.mp4" type="video/mp4">                                           
                     </video>
     </section>
     </div>
