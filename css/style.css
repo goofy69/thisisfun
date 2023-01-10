@@ -1,14 +1,9 @@
-@import url(font-awesome/css/font-awesome.min.css);
-@import url(micons/micons.css);
 @import url(fonts.css);
 html{
     font-family:sans-serif;
     line-height:1.15;
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%
-}
-html,body{
-    overflow-x: hidden;
 }
 body{
     margin:0
@@ -164,13 +159,12 @@ h3{
     line-height:1.25
 }
 iframe#embed{
-    width:200vh;
-    height:100vh;
     margin:0;
     padding:0;
     border:none;
     overflow:hidden;
-    background-color:#ded
+    height: 100vh;
+    width: 100vw;
 }
 .btn{
     margin-bottom:1.2rem
@@ -179,13 +173,15 @@ p{
     margin-bottom:3rem
 }
 #myVideo{
-    width:1600px;
-    height:900px;
-    display:block;
-    margin:0 auto;
-    object-fit:cover;
-    padding-top:75px;
-    padding-bottom:75px
+    display: block; /* centers the video horizontally */
+    margin: 0 auto; /* centers the video horizontally */
+    max-width: 90%; /* limit the maximum width of the video */
+    height: auto; /* Keep the aspect ratio of the video */
+    padding: 5%; /* Add some padding around the video */
+    background-color: transparent;
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
 }
 #preloader{
     position:fixed;

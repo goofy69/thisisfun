@@ -11,11 +11,14 @@
     <script src="js/main.js"></script>
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body id="top">
         </nav>
     </header>
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="assets/bg0.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="assets/bg0.jpg">
         <div class="overlay"></div>
         <div class="shadow-overlay"></div>
         <div class="home-content">
@@ -31,18 +34,29 @@
             location.href="#images";
          }
       </script>
-    <div class="goofyimage">
-    <section id="video" class="s-home target-section" data-parallax="scroll" data-image-src="assets/bg1.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <div class="goofyvideo">
+    <section id="video" class="s-home target-section" data-parallax="scroll" data-image-src="assets/bg1.jpg">
         <div id="bdayvideo" class="bdayvideo">
                 <video id="myVideo" preload="auto" controls onended="videoEnded()">
                     <source src="https://files.catbox.moe/3fa9tt.mp4" type="video/mp4">
                     </video>
     </section>
-
     </div>
+
     <div id="images">
-    <section class="s-home target-section" data-parallax="scroll" data-image-src="https://www.solidbackgrounds.com/images/3840x2160/3840x2160-black-solid-color-background.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
-        <iframe id="embed" src="image/index.html"></iframe>
+    <section class="s-home target-section" data-parallax="scroll" data-image-src="https://www.solidbackgrounds.com/images/3840x2160/3840x2160-black-solid-color-background.jpg">
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+            <img class="image" src="https://i.imgur.com/9bQ6Hkj.jpg" draggable="false" />
+            <img class="image" src="https://i.imgur.com/rAQldBA.jpg" draggable="false" />
+            <img class="image" src="https://i.imgur.com/23JaJuF.jpg" draggable="false" />
+            <img class="image" src="https://i.imgur.com/NidYEnI.jpg" draggable="false" />
+            <img class="image" src="https://i.imgur.com/d3RNYlc.jpg" draggable="false" />
+            <img class="image" src="https://i.imgur.com/60kvCRy.jpg" draggable="false" />
+            <img class="image" src="https://i.imgur.com/NENyJDh.jpg" draggable="false" />
+            <img class="image" src="https://i1.sndcdn.com/artworks-000280812854-9b6bnf-t500x500.jpg" draggable="false" />
+          </div>        
+          <link rel="stylesheet" href="css/showstyle.css">
+          <script src="js/showscript.js"></script>        
     </section>
     </div>
 
