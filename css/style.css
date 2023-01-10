@@ -1,6 +1,6 @@
-@import url(http://thisisfun.cf/css/font-awesome/css/font-awesome.min.css);
-@import url(http://thisisfun.cf/css/micons/micons.css);
-@import url(http://thisisfun.cf/css/fonts.css);
+@import url(font-awesome/css/font-awesome.min.css);
+@import url(micons/micons.css);
+@import url(fonts.css);
 html{
     font-family:sans-serif;
     line-height:1.15;
